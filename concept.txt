@@ -1,0 +1,30 @@
+spending tracking chatbot feature:
+accepted category:
+grocery,
+food,
+transport,
+rent,
+medicine,
+clothing
+
+accepted:
+value,
+category,
+datetime(recorded automatically),
+receipt (optional),
+vendor (optional)
+entering budget
+
+result possible:
+spent so far a day
+spent so far a week in food
+week, monthly report (csv)
+alert when daily and monthly is raised
+whats my biggest expense for this (month year)
+monthly pie chart summed in category.
+time series bar chart every month so far (summed everything)
+
+alert:
+alert when daily and monthly is raised
+daily alert, budget left
+weekly report on monday
