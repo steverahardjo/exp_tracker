@@ -3,9 +3,9 @@ accepted category:
 grocery,
 food,
 transport,
-rent,
 medicine,
-clothing
+clothing,
+misc
 
 accepted:
 value,
@@ -20,7 +20,6 @@ spent so far a day
 spent so far a week in food
 week, monthly report (csv)
 alert when daily and monthly is raised
-whats my biggest expense for this (month year)
 monthly pie chart summed in category.
 time series bar chart every month so far (summed everything)
 
@@ -28,3 +27,31 @@ alert:
 alert when daily and monthly is raised
 daily alert, budget left
 weekly report on monday
+
+USE LANGCHAIN, USE QUERY TO GET DATA FROM USER
+
+1ST INTERACTION
+Initialize user and their data, ask for:
+-name
+-email
+-how much money you have?
+-you want to reduce first ? (put iterative question when its over the proposed budget)
+-how much u want to save?
+-put a daily restriction for each category? ask per day (how much monday to friday) or per week or per month
+
+ITERATIVE DATA EXTRACTION
+something to initialize? ( a keyword to be used)
+Initialize melcome message: Hi, What do you want to record today (provide name, type, number)
+check using pydantic if not met, do iteration of questions needed
+
+after that, give me alert of how much left in today budget/ monthly (IN RED)
+
+RESULT
+ask for excel report
+give monthly csv report
+
+ 
+
+
+ask monthly new budget or tell it to add to the budget
+ask time series bar chart daily/ monthly
